@@ -1,0 +1,12 @@
+{
+  "scope": "source.pawn - variable.other.pawn",
+  "completions": [
+    { "trigger": "include:samp_bcrypt", "contents": "#include <samp_bcrypt>" },
+
+    { "trigger": "bcrypt_hash",  "contents": "bcrypt_hash(${1:const password[]}, ${2:cost = 12}, ${3:const callback[] = \"\"}, ${4:id = 0})" },
+    { "trigger": "bcrypt_check", "contents": "bcrypt_check(${1:const password[]}, ${2:const hash[]}, ${3:const callback[] = \"\"}, ${4:id = 0})" },
+
+    { "trigger": "OnBCryptHash",  "contents": "public OnBCryptHash(${1:bool:success}, ${2:const hash[]}, ${3:id})\\n{\\n\\treturn 1;\\n}" },
+    { "trigger": "OnBCryptCheck", "contents": "public OnBCryptCheck(${1:bool:match}, ${2:id})\\n{\\n\\treturn 1;\\n}" }
+  ]
+}
